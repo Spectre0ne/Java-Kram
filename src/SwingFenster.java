@@ -21,6 +21,8 @@ public class SwingFenster {
         JPanel panel = new JPanel(new BorderLayout());
         panel.setBorder(new EmptyBorder(new Insets(10, 20, 10, 20)));
 
+
+
         JPanel firstRowPanel = new JPanel();
         panel.add(firstRowPanel, BorderLayout.NORTH);
 
@@ -52,7 +54,6 @@ public class SwingFenster {
 
 
         list.addListSelectionListener(new ListSelectionListener() {
-            @Override
             public void valueChanged(ListSelectionEvent e) {
                 if (!e.getValueIsAdjusting()) {
                     String selectedElement = list.getSelectedValue();
